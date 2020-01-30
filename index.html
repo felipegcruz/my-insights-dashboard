@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.6">
+    <title>Dashboard</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="/dist/css/custom.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" href="/dist/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Side Navigation -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block bg-dark sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white-50" href="#">
+                                <span data-feather="home"></span>
+                                Welcome, <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">
+                                <span data-feather="file"></span>
+                                Andy Repp
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <br>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white-50" href="#">
+                                <span data-feather="home"></span>
+                                Metrics<span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white bg-secondary" href="#overview">
+                                <span data-feather="file"></span>
+                                Overview
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">
+                                <span data-feather="file"></span>
+                                Datailing
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">
+                                <span data-feather="file"></span>
+                                Calls
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white-50" href="#">
+                                <span data-feather="home"></span>
+                                Information<span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">
+                                <span data-feather="file"></span>
+                                About profiles
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">
+                                <span data-feather="file"></span>
+                                Datailing targets
+                            </a>
+                        </li>
+                    </ul>
+            </nav>
+
+            <!-- Main -->
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4" id="overview">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3">
+                    <h1 class="h2">Overview</h1>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6>Next call</h6>
+                    </div>
+                    <div class="col-md-6">
+                        <h6>Call this month</h6>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6>Date:</h6>
+                            </div>
+                            <div class="col-md-6">
+                                <p>Tomorrow,3PM</p>
+                                <p>12 November 2017</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6>Account:</h6>
+                            </div>
+                            <div class="col-md-6">
+                                <p>Dr. Clinton Ackerman</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6>Speciality:</h6>
+                            </div>
+                            <div class="col-md-6">
+                                <p>Respiratory therapist</p>
+                                <p>Assitive therapist</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6>Profile:</h6>
+                            </div>
+                            <div class="col-md-6">
+                                <p>Confident</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SVG Circle -->
+                    <div class="col-md-6">
+                        <svg viewBox="0 0 36 36" class="circular-chart" id="circle" class="circle-numbe">
+                            <path class="circle" stroke-dasharray="90, 100" d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <text id="svg-text-01" x="50%" y="50%" text-anchor="middle" stroke="#fff"
+                                stroke-width="0.1px" dy=".1em">25</text>
+                            <text id="svg-text-02" x="50%" y="50%" text-anchor="middle" stroke="#fff"
+                                stroke-width="0.1px" dy="1.5em">/30</text>
+                        </svg>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Section Graphics - Titles -->
+
+    <section class="graphics-title col-md-9 ml-sm-auto col-lg-10 px-4 py-4">
+        <h6>Detailing topic breakdown</h6>
+    </section>
+
+    <!-- Section Graphics - Diamonds -->
+
+    <section class="col-md-12 ml-sm-auto col-lg-10">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <div id="diamond01"><span>Adherence</span></div>
+                </div>
+                <div class="col-md-2">
+                    <div id="diamond02"><span>Combination therapy</span></div>
+                </div>
+                <div class="col-md-2">
+                    <div id="diamond03"><span>Dosing</span></div>
+                </div>
+                <div class="col-md-2">
+                    <div id="diamond04"><span>Guidelines</span></div>
+                </div>
+                <div class="col-md-2">
+                    <div id="diamond05"><span>Safety</span></div>
+                </div>
+                <div class="col-md-2">
+                    <div id="diamond06"><span>Other</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Progression Bars -->
+
+    <section class="col-md-12 ml-sm-auto col-lg-10 progression-bars">
+        <div class="bar-01 bar">
+            <h6>Avg.all</h6>
+            <div class="progress" id="progressBar01">
+                <div class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="20"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 5%" aria-valuenow="5"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar bg-primary" role="progressbar" style="width: 5%" aria-valuenow="5"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+        <div class="bar-02 bar">
+            <h6>Cautions</h6>
+            <div class="progress" id="progressBar02">
+                <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                <div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="10"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 5%" aria-valuenow="5"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 10%" aria-valuenow="10"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar bg-primary" role="progressbar" style="width: 5%" aria-valuenow="5"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+        <div class="bar-03 bar">
+            <h6>Complacent</h6>
+            <div class="progress" id="progressBar03">
+                <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                <div class="progress-bar bg-success" role="progressbar" style="width: 12%" aria-valuenow="12"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar bg-info" role="progressbar" style="width: 7%" aria-valuenow="7"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 21%" aria-valuenow="21"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 2%" aria-valuenow="2"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar bg-primary" role="progressbar" style="width: 4%" aria-valuenow="4"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+        <div class="bar-04 bar">
+            <h6>Confident</h6>
+            <div class="progress" id="progressBar04">
+                <div class="progress-bar" role="progressbar" style="width: 22%" aria-valuenow="22" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                <div class="progress-bar bg-success" role="progressbar" style="width: 12%" aria-valuenow="12"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar bg-info" role="progressbar" style="width: 15%" aria-valuenow="15"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 19%" aria-valuenow="19"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 2%" aria-valuenow="2"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar bg-primary" role="progressbar" style="width: 4.8%" aria-valuenow="4.8"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="/dist/js/script.js"></script>
+</body>
+
+</html>

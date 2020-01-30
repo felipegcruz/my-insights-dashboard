@@ -1,0 +1,169 @@
+/* Variables */
+
+:root {
+    /* Diamond Color */
+    --diamond01: #00B2FF;
+    --diamond02: #1DB954;
+    --diamond03: #FFFC00;
+    --diamond04: #f80000;
+    --diamond05: #FF00BF;
+    --diamond06: #898F9C;
+}
+
+/* Bootstrap Custom */
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+/* SVG Circle */
+
+.circular-chart {
+    display: block;
+    margin: 10px auto;
+    max-width: 80%;
+    max-height: 250px;
+}
+
+.circle {
+    stroke: #F25022;
+    fill: none;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+    0% {
+        stroke-dasharray: 0 100;
+    }
+}
+
+#svg-text-01 {
+    font-size: 12px;
+}
+
+#svg-text-02 {
+    font-size: 5px;
+}
+
+.sidebar {
+    color: white;
+}
+
+/* Diamonds Progress Bar */
+
+#diamond01,
+#diamond02,
+#diamond03,
+#diamond04,
+#diamond05,
+#diamond06 {
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    position: relative;
+    top: -10px;
+}
+
+#diamond01:after,
+#diamond02:after,
+#diamond03:after,
+#diamond04:after,
+#diamond05:after,
+#diamond06:after {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 10px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+}
+
+#diamond01 {
+    border-bottom-color: var(--diamond01);
+}
+
+#diamond01:after {
+    border-top-color: var(--diamond01);
+}
+
+#diamond02 {
+    border-bottom-color: var(--diamond02);
+}
+
+#diamond02:after {
+    border-top-color: var(--diamond02);
+}
+
+#diamond03 {
+    border-bottom-color: var(--diamond03);
+}
+
+#diamond03:after {
+    border-top-color: var(--diamond03);
+}
+
+#diamond04 {
+    border-bottom-color: var(--diamond04);
+}
+
+#diamond04:after {
+    border-top-color: var(--diamond04);
+}
+
+#diamond05 {
+    border-bottom-color: var(--diamond05);
+}
+
+#diamond05:after {
+    border-top-color: var(--diamond05);
+}
+
+#diamond06 {
+    border-bottom-color: var(--diamond06);
+}
+
+#diamond06:after {
+    border-top-color: var(--diamond06);
+}
+
+#diamond01 span,
+#diamond02 span,
+#diamond03 span,
+#diamond04 span,
+#diamond05 span,
+#diamond06 span {
+    padding-left: 0.8rem;
+}
+
+/* Progression Bars */
+
+.progression-bars {
+    padding-top: 3rem;
+}
+
+.bar {
+    padding-bottom: 2rem;
+}
+
+
+/* Media query */
+
+@media only screen and (max-width: 768px) {
+    .col-md-2 {
+        padding: 1rem;
+    }
+}
