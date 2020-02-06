@@ -8,6 +8,9 @@
     --diamond04: #f80000;
     --diamond05: #FF00BF;
     --diamond06: #898F9C;
+
+    /* Circle Color */
+    --color-circle: #00B2FF;
 }
 
 /* Bootstrap Custom */
@@ -37,7 +40,7 @@
 }
 
 .circle {
-    stroke: #F25022;
+    stroke: var(--color-circle);
     fill: none;
     stroke-width: 2.8;
     stroke-linecap: round;

@@ -1,12 +1,12 @@
 // Circle
 let circle = Math.floor(Math.random() * 100);
 // Circle Number
-let circleNumber = Math.floor((circle * 30) / 100);
+let circleNumber = Math.floor((circle * 30 + 1) / 100);
 // Progression Bar
 let progressionBar1 = Math.floor(Math.random() * 20);
-let progressionBar2 = Math.floor(Math.random() * 20);
-let progressionBar3 = Math.floor(Math.random() * 20);
-let progressionBar4 = Math.floor(Math.random() * 20);
+let progressionBar2 = Math.floor(Math.random() * 10);
+let progressionBar3 = Math.floor(Math.random() * 40);
+let progressionBar4 = Math.floor(Math.random() * 50);
 
 
 document.getElementById("circle").innerHTML = `<path class="circle" stroke-dasharray="${circle}, 100" d="M18 2.0845
